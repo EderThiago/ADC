@@ -1,7 +1,8 @@
 #include "stm32f103xb.h"
-#ifndef adc.h
-#define adc.h
-void adc_init();
-int adc_read(unsigned int canal);
+#ifndef ADC_H
+#define ADC_H
 
+
+void adc_init();
+void adc_read(unsigned int canal);
 #endif
