@@ -4,5 +4,5 @@
 
 
 void adc_init();
-void adc_read(unsigned int canal);
+int adc_read(unsigned int canal);
 #endif

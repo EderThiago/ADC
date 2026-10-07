@@ -22,7 +22,7 @@ void adc_init(){
     ADC1->CR2 |= ADC_CR2_EXTTRIG;
 }
 
-void adc_read(unsigned int canal){
+int adc_read(unsigned int canal){
     
     if(canal <  8){
         GPIOA -> CRL &=~ (0xF << canal*4); 
